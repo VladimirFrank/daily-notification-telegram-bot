@@ -1,0 +1,21 @@
+bot:
+  username:
+  token:
+
+scrum:
+  groupIds:
+    - "-123153"
+  wednesday:
+    cronExpression: "0 5 10 ? * WED"
+    message: "🥳 Среда пришла - неделя прошла 🥳"
+  daily:
+    # Пн-пт в 09:59 МСК
+    cronExpression: "0 59 9 ? * MON,TUE,WED,THU,FRI"
+    message: "🐗 Пора на дейли 🐗"
+    link:
+
+meme:
+  gateway:
+    url: https://meme-api.herokuapp.com
+
+logging.level.ru.frank.reactivetelegrambot.gateway.MemeGateway: DEBUG
